@@ -1,0 +1,123 @@
+/*FONTS----
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+    background-color: rgb(43, 43, 43);
+}
+
+h1 {
+    color: rgb(42, 190, 190);
+    text-align: center;
+    margin: 2%;
+    font-family: 'Lobster', cursive;
+    font-size: 10rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.flag {
+    width: 150px;
+    position: relative;
+    bottom: 30px;
+}
+
+h3 {
+    color: rgb(42, 190, 190);
+    text-align: center;
+    margin: 2%;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.5rem;
+}
+
+.row {
+    padding: 0% 20% 3%;
+}
+
+.player {
+    color: rgb(42, 190, 190);
+    /*background-color: yellow;*/
+    padding: 3%;
+    /*border-style: solid;
+    border-color: black;*/
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+/*.dice {
+    background-color: brown;
+    height: 20rem;
+    padding: 5%;
+    border-style: solid;
+    border-color: black;
+}*/
+
+.refresh {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.btn-outline-info {
+    border-radius: 3px;
+    padding: 14px 40px;
+}
+
+/* ------ MEDIA QUERIES ------ */
+
+.media-query-hidden {
+    display: none;
+}
+
+@media (max-width: 1184px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    .flag {
+        width: 75px;
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    /* é este o Media Query a partir do qual quero alterar o HTML via javascript... */
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .flag {
+        width: 50px;
+        position: relative;
+        bottom: 15px;
+    }
+
+
+    .player {
+        font-size: 2rem;
+    }
+
+    .dice3,
+    .dice4 {
+        width: 10rem;
+    }
+
+    .btn-outline-info {
+        margin-bottom: 3%;
+    }
+
+    /* é aqui que troco o HTML, escondo um e faço aparecer o outro */
+    .media-query-hidden {
+        display: grid;
+    }
+
+    .full-screen {
+        display: none;
+        visibility: hidden;
+    }
+}

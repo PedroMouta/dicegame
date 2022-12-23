@@ -3,7 +3,15 @@ function dice() {
     var a = Math.floor(Math.random() * 6) + 1;
     var b = Math.floor(Math.random() * 6) + 1;
 
-    // Updating the H1
+    var imageSourceA = "images/dice" + a + ".png";
+    var imageSourceB = "images/dice" + b + ".png";
+
+    document.querySelector(".dice1").src = imageSourceA;
+    document.querySelector(".dice2").src = imageSourceB;
+    document.querySelector(".dice3").src = imageSourceA;
+    document.querySelector(".dice4").src = imageSourceB;
+
+    // Updating the title
 
     if (a > b) {
         document.querySelector("h1").innerHTML = "<img class='flag' src='images/red-flag.png' alt='flag'> Player 1 Wins!";
@@ -12,8 +20,12 @@ function dice() {
     } else {
         document.querySelector("h1").innerHTML = "There's a draw!";
     }
+}
 
-    // DICE 1 - .dice1
+
+
+/*
+    // This is the code I've used originally.. quite more extensive lol
 
     if (a === 1) {
         document.querySelector(".dice1").src = "images/dice1.png";
@@ -108,7 +120,4 @@ function dice() {
     } else {
         document.querySelector(".dice4").src = "images/dice6.png";
     }
-
-    a = undefined;
-    b = undefined;
-}
+*/
